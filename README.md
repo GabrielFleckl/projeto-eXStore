@@ -19,7 +19,7 @@
 
 Aqui você pode conferir o layout do projeto. <br>
 
-[👉 Link para visualizar a pagina completa]()
+[👉 Link para visualizar a pagina completa](https://exstore-pied.vercel.app/)
 
 
 <br>
