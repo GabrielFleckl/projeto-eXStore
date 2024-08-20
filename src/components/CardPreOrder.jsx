@@ -1,11 +1,11 @@
 function PreOrderCard({ title, img }) {
   return (
-    <main className="relative">
-      <img src={img} className="blur-[3px] " alt="" />
-      <h1 className="absolute lg:bottom-24 bottom-24 lg:left-9 left-5 w-60 lg:w-80  text-white font-bold text-1xl md:text-4xl">
+    <main className="relative border-2 border-slate-500/50 rounded-xl">
+      <img src={img} className="" alt="" />
+      <h1 className="absolute lg:bottom-24 bottom-24 lg:left-9 left-5 w-60 lg:w-80   py-1 rounded-lg text-white font-bold text-xl md:text-4xl">
         {title}
       </h1>
-      <button className="btn text-white p-1 m-0 h-0 absolute lg:bottom-6 bottom-6 lg:left-9 left-5 hover:bg-white hover:text-slate-800">
+      <button className="btn text-slate-100 border-none bg-[#3B44F6] backdrop-blur-md  absolute lg:bottom-6 bottom-6 lg:left-9 left-5 hover:bg-[#3B44F6]  ring-slate-50 hover:ring-1 ">
         Pre-order now!
       </button>
     </main>

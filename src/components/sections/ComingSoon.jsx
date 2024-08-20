@@ -11,7 +11,7 @@ function ComingSoon() {
   const preOrderCardDescriptionBig = [
     {
       key: "1",
-      title: "Call of Duty®: Modern Warfare® II",
+      title: "Call of Duty®",
       img: cod,
     },
     {
@@ -29,7 +29,7 @@ function ComingSoon() {
     },
     {
       key: "2",
-      title: "Resident Evil 4 - Remake",
+      title: "Resident Evil 4",
       img: re4,
     },
     {
@@ -43,7 +43,7 @@ function ComingSoon() {
     <section className="bg-tertiaryBlack">
       <div className="py-10 w-3/4 m-auto">
         <Title secondary={true} title={"Coming Soon"} />
-        <div className="mt-10 flex gap-4 flex-col lg:flex-row">
+        <div className="mt-10 flex gap-4 flex-col lg:flex-row ">
           <div className="flex flex-col gap-4 ">
             {preOrderCardDescriptionBig.map((card) => (
               <PreOrderCard title={card.title} key={card.key} img={card.img} />
