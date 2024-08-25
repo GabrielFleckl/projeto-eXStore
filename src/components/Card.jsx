@@ -1,5 +1,3 @@
-
-
 function calculateDiscountedPrice(originalPrice, discount) {
   const discountPercentage = parseFloat(discount);
   const discountAmount = (originalPrice * discountPercentage) / 100;
@@ -8,17 +6,18 @@ function calculateDiscountedPrice(originalPrice, discount) {
 }
 
 function Card({ name, price, discount, prevPrice, isFree, img }) {
-
   const discountedPrice = calculateDiscountedPrice(prevPrice, discount);
 
   return (
     <>
-      <main className="bg-white p-4 rounded-lg cursor-pointer hover:-translate-y-2 ease-in-out duration-300">
+      <main className="bg-slate-100 p-4 rounded-lg cursor-pointer hover:scale-[1.03] ease-in-out duration-300">
         <div className="mb-4">
           <img src={img} alt="" />
         </div>
         <div>
-          <h1 className="text-primaryBlack font-medium text-xl	mb-4 lg:text-start text-center">{name}</h1>
+          <h1 className="text-primaryBlack font-medium text-xl	mb-4 lg:text-start text-center">
+            {name}
+          </h1>
 
           {isFree ? (
             <div className="bg-primaryGray inline-block rounded px-3 py-1">
@@ -30,7 +29,7 @@ function Card({ name, price, discount, prevPrice, isFree, img }) {
             <div className="flex flex-col gap-3 lg:flex-row lg:justify-between mb-2 lg:items-center items-center">
               <div>
                 <p className="text-primaryBlue font-medium text-base">
-                  Rp {discount ? discountedPrice : price}
+                  RP {discount ? discountedPrice : price}
                 </p>
               </div>
 

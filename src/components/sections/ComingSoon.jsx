@@ -44,12 +44,12 @@ function ComingSoon() {
       <div className="py-10 w-3/4 m-auto">
         <Title secondary={true} title={"Coming Soon"} />
         <div className="mt-10 flex gap-4 flex-col lg:flex-row ">
-          <div className="flex flex-col gap-4 ">
+          <div className="flex flex-col gap-3 ">
             {preOrderCardDescriptionBig.map((card) => (
               <PreOrderCard title={card.title} key={card.key} img={card.img} />
             ))}
           </div>
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-3">
             {preOrderCardDescriptionSmall.map((card) => (
               <PreOrderCard title={card.title} key={card.key} img={card.img} />
             ))}
